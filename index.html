@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<!-- ArquitectonicaSTUDIO -->
+
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta charset="utf-8" />
+    <title>ArquitectonicaSTUDIO</title>
+    <link rel="stylesheet" href="stylesheet.css" />
+    <link rel="icon" type="image/png" href="Original Image/favicon.png" />
+    <link
+      rel="preload"
+      href="Graphik_Font/Graphik-Regular.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin
+    />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, maximum-scale=1"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+  </head>
+  <body>
+    <!-- Header -->
+
+    <table>
+      <tr>
+        <td><a href="index.html">ArquitectonicaSTUDIO</a></td>
+
+        <td>
+          <button class="button">
+            <div class="main-wrap">
+              <input id="slide-sidebar" type="checkbox" />
+              <label for="slide-sidebar"><span>Work</span></label>
+              <div class="portfolio"><h1></h1></div>
+            </div>
+          </button>
+        </td>
+
+        <!-- <td><button onclick="myFunction()" id="select" class="button2">About</button></td> -->
+        <td><button id="submit" class="button">About</button></td>
+      </tr>
+    </table>
+
+    <!-- Underline Buttons -->
+
+    <script>
+      var $buttons = jQuery("button");
+      $buttons.on("click", function () {
+        jQuery(this)
+          .toggleClass("active")
+          .siblings("button")
+          .removeClass("active");
+      });
+    </script>
+
+    <!-- Get About Text -->
+
+    <script>
+      $("#submit").on("click", function () {
+        if ($("#container").css("opacity") == 0) {
+          $("#container").css("opacity", 1);
+        } else {
+          $("#container").css("opacity", 0);
+        }
+      });
+    </script>
+
+    <!-- About Text -->
+
+    <div id="container">
+      <p>
+        <br />
+        <br />
+        <br />We are an interdisciplinary studio that weaves together art,
+        architecture, and graphic design.
+        <br />
+        <br />
+        Our work embraces material experimentation, research, and collaboration
+        across all scales and mediums, with a focus towards innovative
+        architectural projects, environments, and designed objects for cultural
+        and commercial clients.
+        <br />
+        <br />
+        We approach each project with curiosity and creative inquiry, seeking
+        ways to engage artists, writers, and makers within our community into
+        the design process. Our work is made thoughtfully and hands-on. We work
+        closely with our fabricators and collaborators at all stages of each
+        project, ensuring visual and material cohesion throughout.
+        <br />
+        <br />
+        <br />
+        Team
+        <br />
+        <br />
+
+        <a href="LaurindaSpearInfo.html">Laurinda Spear</a>
+        <br />
+        <a href="remove.html">Christine Zavesky</a>
+        <br />
+        <a href="remove.html">Christopher Chanez</a>
+        <br />
+        <br />
+        <br />
+        Clients
+        <br />
+        <br />
+        ● Port Miami Tunnel
+        <br />
+        ● Miami Children’s Museum
+        <br />
+        ● South Miami Dade Cultural Arts Center
+        <br />
+        <br />
+        <br />
+        Contact
+        <br />
+        <br />
+        2900 Oak Avenue
+        <br />
+        Miami FL, 33133
+        <br />
+        info@arquitectonicastudio.com
+      </p>
+    </div>
+
+    <!-- all projects -->
+  </body>
+</html>

@@ -1,0 +1,170 @@
+@font-face {
+    font-family: 'Graphik';
+    src: url('Graphik_Font/Graphik-Regular.eot');
+    src: url('Graphik_Font/Graphik-Regular.eot?#iefix') format('embedded-opentype'),
+        url('Graphik_Font/Graphik-Regular.woff2') format('woff2'),
+        url('Graphik_Font/Graphik-Regular.woff') format('woff'),
+        url('Graphik_Font/Graphik-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+
+body { 
+    font-family: 'Graphik';
+    font-size: 40px;
+    background:
+        linear-gradient(to top right, rgb(136, 135, 135), transparent),
+        linear-gradient(to top left, rgb(33, 138, 33), transparent),
+        linear-gradient(to bottom left, orange, transparent),
+        linear-gradient(to bottom right, rgb(0, 204, 255), transparent);
+    background-blend-mode: screen;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    margin-top: 30px;
+    margin-right: 60px;
+    margin-left: 60px;
+}
+
+
+  /* About */
+
+  p  {
+    font-family: 'Graphik';
+    font-weight: normal;
+    letter-spacing: 0px;
+    line-height: 110%;
+    background-color: none;
+    color: black;
+}
+/* 
+table */
+
+table {
+    font-family: 'Graphik';
+    font-size: 40px;
+    border-collapse: collapse;
+    width: 100%;
+  }
+
+td, th {
+    /* border: 1px solid black; */
+    text-align: right;
+    padding: 0px;
+
+
+  }
+
+  /* Header */
+
+.button {
+    background-color: transparent;
+    border: none;
+    color:black;
+    padding: none;
+    text-decoration: none;
+    display: inline-block;
+    font-family: 'Graphik';
+    font-size: 1em;
+    font-weight: normal;
+    letter-spacing: 0px;
+    line-height: 100%;
+    cursor: pointer;
+    float: right;
+}
+
+
+button:hover, button:focus, button:active, button:visited, .active { 
+    text-decoration: underline;
+    text-decoration-thickness: 3.25px;
+    color:#000;
+}
+
+
+/* Fade About Button */
+
+#container {
+    opacity: 0;
+    -webkit-transition: all 0.15s ease-in-out;
+    -moz-transition: all 0.15s ease-in-out;
+    -ms-transition: all 0.15s ease-in-out;
+    -o-transition: all 0.15s ease-in-out;
+    transition: all 0.15s ease-in-out;
+  }
+
+/* Carosel */
+
+.portfolio {
+    font-family: 'Graphik';
+    font-size: .5em;
+    background:
+        linear-gradient(to top right, rgb(100, 85, 68),     transparent),
+        linear-gradient(to top left, rgb(113, 49, 150), transparent),
+        linear-gradient(to bottom left, rgb(16, 110, 252), transparent),
+        linear-gradient(to bottom right, rgb(167, 60, 41), transparent);
+    background-blend-mode: screen;
+    background-color: black;
+    background-repeat: no-repeat;
+    overflow-x: hidden;
+    position: absolute;
+    top: 0;
+    right: 0%;
+    left: 98%;
+    bottom: 0;
+    z-index: -1;
+    -moz-transition: left .5s ease;
+    transition: left .5s ease;
+}
+
+input[type=checkbox] {
+   display: none;
+}
+
+input:checked ~ .portfolio { 
+    left: 0%;
+}
+
+input:checked ~ label {
+    left: 0;
+}
+
+label {
+    z-index: 0;
+    position: inherit;
+    background-color: none;
+    cursor: pointer;
+
+}
+
+    
+/* team sliders */
+
+
+/* Links */
+a:link {
+    text-align: left;
+    color: black;
+    background-color: none;
+    text-decoration: none;
+    float: left;
+
+}
+
+/* visited link   */
+a:visited {
+    color: black;
+}
+
+    /* mouse over link */
+a:hover {
+text-decoration: underline;
+}
+/* selected link */
+a:active {
+    color:black;
+}
+
+
+
