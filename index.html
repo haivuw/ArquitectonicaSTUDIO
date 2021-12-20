@@ -23,53 +23,21 @@
   </head>
   <body>
     <!-- Header -->
+    <header>
+      <div>
+        <a href="index.html">ArquitectonicaSTUDIO</a>
+      </div>
 
-    <table>
-      <tr>
-        <td><a href="index.html">ArquitectonicaSTUDIO</a></td>
+      <div class="header-menu">
+        <button id="header-work" class="header-button">Work</button>
+        <button id="header-about" class="header-button">About</button>
+      </div>
+    </header>
 
-        <td>
-          <button class="button">
-            <div class="main-wrap">
-              <input id="slide-sidebar" type="checkbox" />
-              <label for="slide-sidebar"><span>Work</span></label>
-              <div class="portfolio"><h1></h1></div>
-            </div>
-          </button>
-        </td>
-
-        <!-- <td><button onclick="myFunction()" id="select" class="button2">About</button></td> -->
-        <td><button id="submit" class="button">About</button></td>
-      </tr>
-    </table>
-
-    <!-- Underline Buttons -->
-
-    <script>
-      var $buttons = jQuery("button");
-      $buttons.on("click", function () {
-        jQuery(this)
-          .toggleClass("active")
-          .siblings("button")
-          .removeClass("active");
-      });
-    </script>
-
-    <!-- Get About Text -->
-
-    <script>
-      $("#submit").on("click", function () {
-        if ($("#container").css("opacity") == 0) {
-          $("#container").css("opacity", 1);
-        } else {
-          $("#container").css("opacity", 0);
-        }
-      });
-    </script>
-
+    <div id="portfolio">ahahah</div>
     <!-- About Text -->
 
-    <div id="container">
+    <div id="about">
       <p>
         <br />
         <br />
@@ -126,5 +94,6 @@
     </div>
 
     <!-- all projects -->
+    <script src="app.js"></script>
   </body>
 </html>
