@@ -24,7 +24,7 @@
   <body>
     <!-- Header -->
     <header>
-      <div>
+      <div class="homepage">
         <a href="index.html">ArquitectonicaSTUDIO</a>
       </div>
 
@@ -34,7 +34,36 @@
       </div>
     </header>
 
-    <div id="portfolio">ahahah</div>
+    <div id="portfolio">
+      <div class="slider-container">
+        <div class="slide">
+          <img
+            src="https://lh3.googleusercontent.com/pw/ACtC-3cXixh8cfQDKrEJl4TqYD2Ijtzofy50AxJCr7iR3zpawbXtCFSb7pGJCdNsE0RRtxgsdoK-ymi18eI5ODXR3IOqcaoMoWKKxahKlsRfe9TAN2Nt6N_JD6t__N7FsOKPshBcyxfR2tNC-2_H5Xq_QeBpvw=w1560-h929-no?authuser=0"
+          />
+        </div>
+        <div class="slide">
+          <img
+            src="https://lh3.googleusercontent.com/pw/ACtC-3eayS-NfeEWhiQgXGKtCxzzwHt3UgffDdc6fRexH9brTiw1bFXAjjziKpO1IXU5cBwvtTUlFAcZDmtEQeL5hqttZcyU2VftiYlFlIdFd23B7IUVi95gqEzoApUNOjKGrv7i9BCvMekeWiCySUA9BNyjig=w1320-h979-no?authuser=0"
+          />
+        </div>
+        <div class="slide">
+          <img
+            src="https://lh3.googleusercontent.com/pw/ACtC-3fBk1O3JzIeEa-rGZ7nDTH9A0fjEmUM9nMkkIIGpQvXR2xJ6bBuyhvxrIX1oZdELrwjbmY1zkIaNyAQ_FxJsC5Tg0Q9S3LTidjq7JkOSHbH5CGozAnKJixtEMTOT82abXeqK7Im8VfjXO2f42dUQBGmSw=w718-h979-no?authuser=0"
+          />
+        </div>
+        <div class="slide">
+          <img
+            src="https://lh3.googleusercontent.com/pw/ACtC-3f0GPsI83b1C4PtLZkZL7nyL0L8i7YfoTAAR-5HPgyWHwe8P4--fa7bpPfK0IbJ7-fguR9nvFdFRM1f3Yj1QxWkyjzE1JY8B1Zs75WA65u55QpfTp8050mOEaGwTiFnHFQdl9C77rW0IJIXGtwFNwoe3Q=w1560-h878-no?authuser=0"
+          />
+        </div>
+        <div class="slide">
+          <img
+            src="https://lh3.googleusercontent.com/pw/ACtC-3f7G2vV77t8yi03uKKgstftngql_GQ_ELtpnqQslSN0WL_PWriugNmMV47fFXqaNTPe6pGW8RcI8Q7tIua7f3a1vL4ynrGYsNvxX0zl8v1HSlsLkrEx6IORQIqTXAhJF_mTYi9_vh0_SmqxHIJVN4UcLQ=w719-h979-no?authuser=0"
+            alt=""
+          />
+        </div>
+      </div>
+    </div>
     <!-- About Text -->
 
     <div id="about">
@@ -63,11 +92,11 @@
         <br />
         <br />
 
-        <a href="LaurindaSpearInfo.html">Laurinda Spear</a>
+        <a class="team-member-button" href="javascript:;">Laurinda Spear</a>
         <br />
-        <a href="remove.html">Christine Zavesky</a>
+        <a class="team-member-button" href="javascript:;">Christine Zavesky</a>
         <br />
-        <a href="remove.html">Christopher Chanez</a>
+        <a class="team-member-button" href="javascript:;">Christopher Chanez</a>
         <br />
         <br />
         <br />
@@ -93,7 +122,26 @@
       </p>
     </div>
 
-    <!-- all projects -->
+    <div id="team">
+      <div class="team-header">
+        <button id="team-prev" class="header-button">Prev</button>
+        <button id="team-next" class="header-button">Next</button>
+        <button id="team-close" class="header-button">Close</button>
+      </div>
+      <div class="bio-container">
+        <div class="team-member">
+          <h1>Laurinda Spear</h1>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.<img src="https://lh3.googleusercontent.com/i6bFWnpLdkENqwNLz6F3GL983ZSbndqv_2XG5vO3UvgPhudtkDbSOpXRIIhh0YG1AjVm=s85"></img></p>
+        </div>
+        <div class="team-member">
+          <h1>Christine Zavesky</h1>
+        </div>
+        <div class="team-member">
+          <h1>Christopher Chanez</h1>
+        </div>
+      </div>
+    </div>
+
     <script src="app.js"></script>
   </body>
 </html>
