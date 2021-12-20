@@ -308,8 +308,9 @@ body {
 }
 
 .slide img {
+  object-fit: cover;
   width: 100%;
-  /* max-height: 100%; */
+  max-height: 100vh;
   transition: transform 0.3s ease-in-out;
   box-shadow: 5px 5px 50px -1px var(--shadow);
   border-radius: 4px;
