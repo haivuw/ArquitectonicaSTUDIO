@@ -172,7 +172,6 @@ button:visited {
   height: 100vh;
   -moz-transition: left 0.5s ease;
   transition: left 0.5s ease;
-  z-index: 2;
   padding: 30px;
   padding-left: 2vw;
   min-width: 50vw;
