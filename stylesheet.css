@@ -296,6 +296,7 @@ body {
 
 .slide .image-container {
   position: relative;
+  width: 100%;
 }
 
 .slide .image-container p {
